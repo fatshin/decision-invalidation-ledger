@@ -2,6 +2,9 @@
 
 **Tagline:** Detect when new evidence invalidates an old decision.
 
+**Category:** Work & Productivity  
+**Codex Session ID:** `019f7306-7262-7371-a03f-6b99df7129bf`
+
 ## What it does
 
 The ledger records a decision with its assumptions and review triggers. New
