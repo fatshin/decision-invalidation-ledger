@@ -1,5 +1,7 @@
 # Decision Invalidation Ledger
 
+[Live demo](https://decision-invalidation-ledger.fatshin.chatgpt.site) · [Public repository](https://github.com/fatshin/decision-invalidation-ledger)
+
 Decision Invalidation Ledger stores a decision beside the evidence conditions
 that would reopen it. New evidence changes each item to `VALID`, `AT_RISK`, or
 `INVALIDATED` without rewriting the original decision.
@@ -36,4 +38,3 @@ ledger and the deterministic evaluator owns status changes.
 
 The DSL supports numeric comparisons only. The MVP does not fetch external
 evidence or change operational systems when a decision becomes invalid.
-
