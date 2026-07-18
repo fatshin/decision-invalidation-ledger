@@ -13,9 +13,10 @@ valid, at risk, or invalidated.
 
 ## How it was built
 
-Codex implemented the ledger schema, trigger comparison, three-state evaluation,
-tests, and browser interface. GPT-5.6 is intended to extract candidate
-assumptions; owners approve the final assumptions and triggers.
+I used Codex with GPT-5.6 to implement the ledger schema, trigger comparison,
+three-state evaluation, tests, and browser interface. A future live path can use
+GPT-5.6 to extract candidate assumptions; the public demo uses a tested fixture,
+and owners approve the final assumptions and triggers.
 
 ## Proof
 
