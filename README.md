@@ -30,11 +30,17 @@ that would reopen it. New evidence changes each item to `VALID`, `AT_RISK`, or
 
 ## OpenAI and Codex
 
-Codex was used for implementation and validation. GPT-5.6 can extract candidate
-assumptions and conditions from decision documents, but humans approve the
-ledger and the deterministic evaluator owns status changes.
+I used Codex with GPT-5.6 to implement the ledger schema, trigger evaluator,
+input-mutation tests, public interface, and validation. A future live path can
+use GPT-5.6 to extract candidate assumptions and conditions from decision
+documents, but humans approve the ledger and the deterministic evaluator owns
+status changes.
 
 ## Limits
 
 The DSL supports numeric comparisons only. The MVP does not fetch external
 evidence or change operational systems when a decision becomes invalid.
+
+## License
+
+This project and its synthetic ledger are released under the MIT License.
