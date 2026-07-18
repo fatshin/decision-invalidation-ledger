@@ -13,8 +13,8 @@ const geistMono = Geist_Mono({
 });
 
 export const metadata: Metadata = {
-  title: "Starter Project",
-  description: "A clean starting point for building your site.",
+  title: "Decision Invalidation Ledger",
+  description: "Reopen decisions when new evidence crosses explicit triggers.",
   icons: {
     icon: "/favicon.svg",
     shortcut: "/favicon.svg",

@@ -8,8 +8,20 @@ export const product: Product = {
   description: "Record decisions with the assumptions that support them, then compare new evidence and show which decisions remain valid, are at risk, or must be reopened.",
   accent: "#8c5cff",
   inputLabel: "Decision ledger update",
-  inputHint: "The same three decisions and evidence records are evaluated by product.py.",
-  inputValue: "D-1 Use Model A: invalidate quality <80; observed 77.\nD-2 Keep vendor B: invalidate uptime <99.5; observed 99.8.\nD-3 Launch workflow C: review complaints >5; observed 7.",
+  inputHint: "These exact decisions and evidence records are evaluated by product.py.",
+  inputValue: `Decisions:
+[
+  {"id":"D-1","decision":"Use Model A","invalidate_when":"quality < 80","review_when":"cost > 200000"},
+  {"id":"D-2","decision":"Keep vendor B","invalidate_when":"uptime < 99.5","review_when":"incidents > 2"},
+  {"id":"D-3","decision":"Launch workflow C","invalidate_when":"completion < 90","review_when":"complaints > 5"}
+]
+
+Evidence:
+{
+  "D-1":{"quality":77,"cost":180000,"source":"eval-2026-07-18.csv"},
+  "D-2":{"uptime":99.8,"incidents":1,"source":"status-q2.json"},
+  "D-3":{"completion":93,"complaints":7,"source":"launch-week.csv"}
+}`,
   actionLabel: "Reveal verified result",
   status: "ACTION_REQUIRED",
   statusTone: "warn",
